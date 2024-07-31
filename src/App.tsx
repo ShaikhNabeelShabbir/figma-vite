@@ -42,9 +42,7 @@ function App() {
 <br />
 <div className="dimensions flex items-end mr-7 gap-3.5 p-3 md:mr-0
  border-gray-300 border border-solid bg-white shadow-sm rounded-md
-"> <Popover>
-<PopoverTrigger><div>Dimensions</div></PopoverTrigger>
-<PopoverContent className="w-80">
+">
   <div className="grid gap-4">
     <div className="space-y-2">
       <h4 className="font-medium leading-none">Dimensions</h4>
@@ -87,8 +85,19 @@ function App() {
       </div>
     </div>
   </div>
-</PopoverContent>
-</Popover>
+</div>
+<div className="container-xs flex items-center justify-center smsflex-col
+ self-end sm:self-auto">
+<span className="text-slate-400">This figma file was made with love byánbsp; </span>
+<a href="#" className="text-slate-400 underline">
+ @skirano
+</a>
+<div className="flex flex-1 items-center justify-end gap-[17px] sm:self-stretch">
+<Button className="min-w-[56px] shadow-md">
+Beta
+</Button>
+v1.0.0
+</div>
 </div>
 </>
 )}
