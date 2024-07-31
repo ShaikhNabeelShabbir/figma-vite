@@ -17,6 +17,7 @@ import {
 } from "@/components/ui/hover-card";
 import { CalendarIcon } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "./components/ui/avatar";
+
 function App() {
   return (
     <>
@@ -53,73 +54,74 @@ function App() {
         <Label htmlFor="airplane-mode">Airplane Mode</Label>
         <Button className="min-w-[56px] shadow-md">Continue</Button>
       </div>
-
-      <div
-        className="hoverCard flex justify-center items-center space-x-2 w-80 
-       border-gray-300 border border-solid bg-white shadow-sm rounded-md
-      mr-7 gap-3.5 p-3 md:mr-0"
-      >
-        <Avatar>
-          <AvatarImage src="https://github.com/vercel.png" />
-          <AvatarFallback>VC</AvatarFallback>
-        </Avatar>
-        <div className="space-y-1">
-          <h4 className="text-sm font-semibold">@nextjs</h4>
-          <p className="text-sm">
-            The React Framework – created and maintained by @vercel.
-          </p>
-          <div className="flex items-center pt-2">
-            <CalendarIcon className="mr-2 h-4 w-4 opacity-70" />{" "}
-            <span className="text-xs text-muted-foreground">
-              Joined December 2021
-            </span>
+      <br />
+      <div className="flex justify-between items-center">
+        <div
+          className="dimensions flex items-end gap-3.5 p-3 
+          border-gray-300 border border-solid bg-white shadow-sm rounded-md"
+        >
+          <div className="grid gap-4">
+            <div className="space-y-2">
+              <h4 className="font-medium leading-none">Dimensions</h4>
+              <p className="text-sm text-muted-foreground">
+                Set the dimensions for the layer.
+              </p>
+            </div>
+            <div className="grid gap-2">
+              <div className="grid grid-cols-3 items-center gap-4">
+                <Label htmlFor="width">Width</Label>
+                <Input
+                  id="width"
+                  defaultValue="100%"
+                  className="col-span-2 h-8"
+                />
+              </div>
+              <div className="grid grid-cols-3 items-center gap-4">
+                <Label htmlFor="maxWidth">Max. width</Label>
+                <Input
+                  id="maxWidth"
+                  defaultValue="300px"
+                  className="col-span-2 h-8"
+                />
+              </div>
+              <div className="grid grid-cols-3 items-center gap-4">
+                <Label htmlFor="height">Height</Label>
+                <Input
+                  id="height"
+                  defaultValue="25px"
+                  className="col-span-2 h-8"
+                />
+              </div>
+              <div className="grid grid-cols-3 items-center gap-4">
+                <Label htmlFor="maxHeight">Max. height</Label>
+                <Input
+                  id="maxHeight"
+                  defaultValue="none"
+                  className="col-span-2 h-8"
+                />
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-
-      <div
-        className="dimensions flex items-end mr-7 gap-3.5 p-3 md:mr-0
- border-gray-300 border border-solid bg-white shadow-sm rounded-md"
-      >
-        <div className="grid gap-4">
-          <div className="space-y-2">
-            <h4 className="font-medium leading-none">Dimensions</h4>
-            <p className="text-sm text-muted-foreground">
-              Set the dimensions for the layer.
+        <div
+          className="hoverCard flex items-center space-x-2 w-80 
+          border-gray-300 border border-solid bg-white shadow-sm rounded-md
+          gap-3.5 p-3"
+        >
+          <Avatar>
+            <AvatarImage src="https://github.com/vercel.png" />
+            <AvatarFallback>VC</AvatarFallback>
+          </Avatar>
+          <div className="space-y-1">
+            <h4 className="text-sm font-semibold">@nextjs</h4>
+            <p className="text-sm">
+              The React Framework – created and maintained by @vercel.
             </p>
-          </div>
-          <div className="grid gap-2">
-            <div className="grid grid-cols-3 items-center gap-4">
-              <Label htmlFor="width">Width</Label>
-              <Input
-                id="width"
-                defaultValue="100%"
-                className="col-span-2 h-8"
-              />
-            </div>
-            <div className="grid grid-cols-3 items-center gap-4">
-              <Label htmlFor="maxWidth">Max. width</Label>
-              <Input
-                id="maxWidth"
-                defaultValue="300px"
-                className="col-span-2 h-8"
-              />
-            </div>
-            <div className="grid grid-cols-3 items-center gap-4">
-              <Label htmlFor="height">Height</Label>
-              <Input
-                id="height"
-                defaultValue="25px"
-                className="col-span-2 h-8"
-              />
-            </div>
-            <div className="grid grid-cols-3 items-center gap-4">
-              <Label htmlFor="maxHeight">Max. height</Label>
-              <Input
-                id="maxHeight"
-                defaultValue="none"
-                className="col-span-2 h-8"
-              />
+            <div className="flex items-center pt-2">
+              <CalendarIcon className="mr-2 h-4 w-4 opacity-70" />{" "}
+              <span className="text-xs text-muted-foreground">
+                Joined December 2021
+              </span>
             </div>
           </div>
         </div>
