@@ -30,8 +30,6 @@ function App() {
       </div>
       <br />
       <br />
-      <br />
-
       <div className="flex flex-row gap-6">
         {/* Column 1 */}
         <div className="flex flex-col flex-1 gap-6">

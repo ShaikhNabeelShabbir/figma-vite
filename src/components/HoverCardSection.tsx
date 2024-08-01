@@ -1,4 +1,3 @@
-// src/components/HoverCardSection.js
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { CalendarIcon } from "lucide-react";
 
