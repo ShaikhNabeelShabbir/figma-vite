@@ -39,6 +39,7 @@ function App() {
             <Label htmlFor="airplane-mode">Airplane Mode</Label>
             <Button className="min-w-[56px] shadow-md">Continue</Button>
           </div>
+          <br />
           <HoverCardSection />
         </div>
 
