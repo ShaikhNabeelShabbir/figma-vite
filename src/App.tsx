@@ -53,8 +53,12 @@ function App() {
           <br />
           <HoverCardSection />
           <br />
-          <div className="flex flex-col flex-1 items-center gap-10">
-            <Tabs defaultValue="account" className="w-[400px]">
+          <div
+            className="flex items-center space-x-2 w-50
+      border-gray-300 border border-solid bg-white shadow-sm rounded-md
+      gap-3.5 p-3"
+          >
+            <Tabs defaultValue="account">
               <TabsList>
                 <TabsTrigger value="account">Account</TabsTrigger>
                 <TabsTrigger value="password">Password</TabsTrigger>
