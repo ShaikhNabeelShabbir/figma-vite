@@ -6,13 +6,21 @@ import { Switch } from "@/components/ui/switch";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Label } from "@radix-ui/react-label";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 function App() {
   return (
     <div className="large-container flex flex-col px-20 py-20">
       <div className="flex gap-6 px-14 md:px-5">
-        <div className="h-[24px] w-[24px] rounded-[12px] bg-slate-900" />
-        <a href="https://ui.shadcn.com/" target="_blank" rel="noreferrer"></a>
+        <Avatar>
+          <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+          <AvatarFallback>CN</AvatarFallback>
+        </Avatar>
+        <div className="shadcn-ui py-3">
+          <a href="https://ui.shadcn.com/">
+            <img src="src/assets/ui.png" alt="" />
+          </a>
+        </div>
       </div>
       <div className="title">
         <h1>
@@ -45,7 +53,7 @@ function App() {
           <br />
           <HoverCardSection />
           <br />
-          <div className="flex flex-col flex-1 items-center gap-6">
+          <div className="flex flex-col flex-1 items-center gap-10">
             <Tabs defaultValue="account" className="w-[400px]">
               <TabsList>
                 <TabsTrigger value="account">Account</TabsTrigger>
