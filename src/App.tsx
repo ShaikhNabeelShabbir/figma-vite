@@ -106,88 +106,90 @@ function App() {
             </div>
           </div>
         </div>
-        <div
-          className="hoverCard flex items-center space-x-2 w-80 
+        {/* hoverCard */}
+      <div
+        className="hoverCard flex items-center space-x-2 w-80 
           border-gray-300 border border-solid bg-white shadow-sm rounded-md
           gap-3.5 p-3"
-        >
-          <Avatar>
-            <AvatarImage src="https://github.com/vercel.png" />
-            <AvatarFallback>VC</AvatarFallback>
-          </Avatar>
-          <div className="space-y-1">
-            <h4 className="text-sm font-semibold">@nextjs</h4>
-            <p className="text-sm">
-              The React Framework – created and maintained by @vercel.
-            </p>
-            <div className="flex items-center pt-2">
-              <CalendarIcon className="mr-2 h-4 w-4 opacity-70" />{" "}
-              <span className="text-xs text-muted-foreground">
-                Joined December 2021
-              </span>
-            </div>
+      >
+        <Avatar>
+          <AvatarImage src="https://github.com/vercel.png" />
+          <AvatarFallback>VC</AvatarFallback>
+        </Avatar>
+        <div className="space-y-1">
+          <h4 className="text-sm font-semibold">@nextjs</h4>
+          <p className="text-sm">
+            The React Framework – created and maintained by @vercel.
+          </p>
+          <div className="flex items-center pt-2">
+            <CalendarIcon className="mr-2 h-4 w-4 opacity-70" />{" "}
+            <span className="text-xs text-muted-foreground">
+              Joined December 2021
+            </span>
           </div>
         </div>
       </div>
-      <br />
-
-      <div className="DropDown">
-        <DropdownMenu>
-          <DropdownMenuTrigger asChild>
-            <Button variant="outline">Open</Button>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent className="w-56">
-            <DropdownMenuLabel>My Account</DropdownMenuLabel>
-            <DropdownMenuSeparator />
-            <DropdownMenuGroup>
+      {/* dropdown */}
+              <div className="DropDown">
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant="outline">Open</Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent className="w-56">
+              <DropdownMenuLabel>My Account</DropdownMenuLabel>
+              <DropdownMenuSeparator />
+              <DropdownMenuGroup>
+                <DropdownMenuItem>
+                  Profile
+                  <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
+                </DropdownMenuItem>
+                <DropdownMenuItem>
+                  Billing
+                  <DropdownMenuShortcut>⌘B</DropdownMenuShortcut>
+                </DropdownMenuItem>
+                <DropdownMenuItem>
+                  Settings
+                  <DropdownMenuShortcut>⌘S</DropdownMenuShortcut>
+                </DropdownMenuItem>
+                <DropdownMenuItem>
+                  Keyboard shortcuts
+                  <DropdownMenuShortcut>⌘K</DropdownMenuShortcut>
+                </DropdownMenuItem>
+              </DropdownMenuGroup>
+              <DropdownMenuSeparator />
+              <DropdownMenuGroup>
+                <DropdownMenuItem>Team</DropdownMenuItem>
+                <DropdownMenuSub>
+                  <DropdownMenuSubTrigger>Invite users</DropdownMenuSubTrigger>
+                  <DropdownMenuPortal>
+                    <DropdownMenuSubContent>
+                      <DropdownMenuItem>Email</DropdownMenuItem>
+                      <DropdownMenuItem>Message</DropdownMenuItem>
+                      <DropdownMenuSeparator />
+                      <DropdownMenuItem>More...</DropdownMenuItem>
+                    </DropdownMenuSubContent>
+                  </DropdownMenuPortal>
+                </DropdownMenuSub>
+                <DropdownMenuItem>
+                  New Team
+                  <DropdownMenuShortcut>⌘+T</DropdownMenuShortcut>
+                </DropdownMenuItem>
+              </DropdownMenuGroup>
+              <DropdownMenuSeparator />
+              <DropdownMenuItem>GitHub</DropdownMenuItem>
+              <DropdownMenuItem>Support</DropdownMenuItem>
+              <DropdownMenuItem disabled>API</DropdownMenuItem>
+              <DropdownMenuSeparator />
               <DropdownMenuItem>
-                Profile
-                <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
+                Log out
+                <DropdownMenuShortcut>⇧⌘Q</DropdownMenuShortcut>
               </DropdownMenuItem>
-              <DropdownMenuItem>
-                Billing
-                <DropdownMenuShortcut>⌘B</DropdownMenuShortcut>
-              </DropdownMenuItem>
-              <DropdownMenuItem>
-                Settings
-                <DropdownMenuShortcut>⌘S</DropdownMenuShortcut>
-              </DropdownMenuItem>
-              <DropdownMenuItem>
-                Keyboard shortcuts
-                <DropdownMenuShortcut>⌘K</DropdownMenuShortcut>
-              </DropdownMenuItem>
-            </DropdownMenuGroup>
-            <DropdownMenuSeparator />
-            <DropdownMenuGroup>
-              <DropdownMenuItem>Team</DropdownMenuItem>
-              <DropdownMenuSub>
-                <DropdownMenuSubTrigger>Invite users</DropdownMenuSubTrigger>
-                <DropdownMenuPortal>
-                  <DropdownMenuSubContent>
-                    <DropdownMenuItem>Email</DropdownMenuItem>
-                    <DropdownMenuItem>Message</DropdownMenuItem>
-                    <DropdownMenuSeparator />
-                    <DropdownMenuItem>More...</DropdownMenuItem>
-                  </DropdownMenuSubContent>
-                </DropdownMenuPortal>
-              </DropdownMenuSub>
-              <DropdownMenuItem>
-                New Team
-                <DropdownMenuShortcut>⌘+T</DropdownMenuShortcut>
-              </DropdownMenuItem>
-            </DropdownMenuGroup>
-            <DropdownMenuSeparator />
-            <DropdownMenuItem>GitHub</DropdownMenuItem>
-            <DropdownMenuItem>Support</DropdownMenuItem>
-            <DropdownMenuItem disabled>API</DropdownMenuItem>
-            <DropdownMenuSeparator />
-            <DropdownMenuItem>
-              Log out
-              <DropdownMenuShortcut>⇧⌘Q</DropdownMenuShortcut>
-            </DropdownMenuItem>
-          </DropdownMenuContent>
-        </DropdownMenu>
+            </DropdownMenuContent>
+          </DropdownMenu>
+        </div>
       </div>
+      <br />
+      {/* dropdown */}
       <div className="flex justify-center items-center space-x-2">
         <Tabs defaultValue="account" className="w-[400px]">
           <TabsList>
